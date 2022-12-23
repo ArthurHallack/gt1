@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Sevillana&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Amatic SC', cursive;
+}
+body {
+   height: 100vh;
+   width: 100vw;
+   background: linear-gradient(45deg, purple, blue, green);
+   background-size: 300% 300%; 
+   animation: Hallack 12s infinite;
+}
+@keyframes Hallack {
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 50% 100%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+
+}
+header {
+  text-align: center;
+    position: fixed;
+    height: 100%;
+    width: 25rem;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+
+}
+header .user .nome {
+  font-size: 3.5rem;
+  color: #fff
+}
+header .user .dev {
+  font-size: 2rem;
+  color: #fff
+}
+header .navbar {
+  width: 100%;
+}
+header .navbar ul {
+  list-style: none;
+  padding: 1rem 3rem;
+}
+header .navbar ul li a{
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  display:block;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  background:#000;
+  border-radius: 25px;
+}
+header .navbar ul li a:hover{
+color: #000;
+background: #fff;
+transition: .5s;
+}
+/* header .user img {
+  width: 50%;
+  border-radius: 50%;
+} */
+header .user img {
+width: 8rem;
+height: 8rem;
+border-radius: 50%;
+border:.6rem solid #000;
+object-fit: cover;
+}
+
+
+
